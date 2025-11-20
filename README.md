@@ -1,4 +1,4 @@
-# clasificacion
+# Árboles de decisión
 ## Opinión
 Lo que veo con las diferencias en el max_depth = 2 vs max_depth = None es principalmente que con el que no tiene límite de profundidad, es más preciso; sin embargo, en este ejemplo el árbol que genera es 
 más confuso a la hora de su lectura. Mientras que con el de profundidad 2, los resultados son menos precisos (alrededor de un 8% aproximadamente), pero se leen de una manera mucho más sencilla.
