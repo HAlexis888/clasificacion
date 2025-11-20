@@ -23,6 +23,10 @@ print(f"Precisión con dos de profundidad: {tree1.score(X_test, y_test):.4f}")
 # Arbol con max_depth=None
 tree2 = DecisionTreeClassifier(max_depth=None, random_state=42)
 tree2.fit(X_train, y_train)
+rules2 = export_text(tree2, feature_names=wine.feature_names)
+print("Reglas:")
+print(rules2)
 print(f"Precisión sin limite de profundidad: {tree2.score(X_test, y_test):.4f}")
+
 print(f"Profundidad real: {tree2.get_depth()}")
 print(f"Número de hojas: {tree2.get_n_leaves()}")
